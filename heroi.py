@@ -3,7 +3,6 @@ from personagem import Personagem
 class Heroi(Personagem):
     def __init__(self):
         super().__init__(nome = "Ben Tennyson", idade = 10, vida = 100)
-        self.dano_causado = 0
         self.aliens_desbloqueados = []
 
     
@@ -20,16 +19,6 @@ class Heroi(Personagem):
     
     def ataque(self, personagem):
         personagem.vida -= 5
-        self.dano_causado += 5 
-        if self.dano_causado == 15:
-            self.aliens_desbloqueados.append("Quatro_Braços")
-            print("Quatro-Braços desbloqueado!")
-        if self.dano_causado == 30:
-            self.aliens_desbloqueados.append("Chama")
-            print("Chama desbloqueado!")
-        if self.dano_causado == 45:
-            self.aliens_desbloqueados.append("Diamante")
-            print("Diamante desbloqueado!")
     
     def __str__(self):
         return f'Herói: {self.nome}, Idade: {self.idade}, Vida: {self.vida}'
@@ -58,7 +47,7 @@ class Chama(Heroi):
         super().__init__()
         self.nome = "Chama" 
         self.vida = 200
-        self.barreira_ativa = False
+        
 
     def downgrade_vida(self):
         self.vida -= 10
@@ -78,6 +67,7 @@ class Diamante(Heroi):
         super().__init__()
         self.nome = "Diamante"
         self.vida = 200
+        self.barreira_ativa = False
     
     def downgrade_vida(self):
         if self.barreira_ativa == True:
