@@ -1,73 +1,54 @@
-# DESAFIO 🕹️ Improve This Game 🕹️
+# ⌚ Ben 10: Ultimate Terminal Battle
 
-### Universidade Federal Rural de Pernambuco  
-**Departamento de Estatística e Informática**  
-**Bacharelado em Sistemas de Informação**  
-**Disciplina: Princípios de Programação**
+Um jogo de RPG por turnos totalmente jogável pelo terminal, construído em Python. Enfrente o temível Vilgax, mude de forma usando o Omnitrix e salve o universo!
 
 ---
 
-# **DESAFIO: Melhoria do Jogo de Personagens - POO em Python**
+## 🧬 1. Sobre a Refatoração com POO
+Este projeto foi evoluído de um modelo procedural estruturado em blocos condicionais aninhados (`if/elif/else`) para o paradigma de **Programação Orientada a Objetos (POO)**. 
 
-## **Descrição do Desafio**
-
-Este repositório contém um código básico de um jogo de personagens que precisa ser aprimorado. O objetivo é aplicar conceitos de **Programação Orientada a Objetos (POO)**, **listas**, **dicionários** e **estruturas de repetição e decisão** para tornar o jogo mais interativo e dinâmico.
-
-## **Objetivo da Atividade**
-
-Você deve melhorar o código existente, que atualmente possui as classes `Personagem` e `Vilao`, mas falta a inclusão da classe `Heroi`. Além disso, os métodos implementados são muito básicos e não proporcionam uma interação interessante com o usuário.
-
-## **Tarefas a serem realizadas**
-
-1. **Criar a classe `Heroi`**, que deve herdar de `Personagem`, assim como `Vilao`. Essa classe deve ter características e métodos próprios.
-2. **Reestruturar os métodos das classes** para que realizem ações mais complexas e significativas, como ataques, defesa e uso de habilidades.
-3. **Criar um sistema de interação entre heróis e vilões**, adicionando diálogos e eventos durante o jogo.
-4. **Utilizar listas e dicionários** para armazenar informações dos personagens, como status, habilidades e itens.
-5. **Implementar estruturas de repetição e decisão** para gerenciar batalhas e eventos no jogo.
-6. **Melhorar a interface textual do jogo**, exibindo mensagens mais interativas para o jogador.
-7. **Garantir que o código esteja modularizado**, permitindo fácil manutenção e expansão do jogo.
-
-## **Requisitos Técnicos**
-
-- Todos os personagens (heróis e vilões) devem ter atributos como `nome`, `vida`, `ataque` e `defesa`.
-- A classe `Heroi` deve herdar de `Personagem` e possuir métodos próprios, como `salvar_refem()` ou `usar_pocao()`.
-- Criar um método `dialogar()` para interações entre personagens, tornando o jogo mais envolvente.
-- Implementar batalhas entre heróis e vilões utilizando estruturas de repetição e decisão.
-- Usar **listas** para armazenar diferentes heróis e vilões, e **dicionários** para guardar seus atributos.
-- Melhorar a exibição de mensagens e interações para tornar a jogabilidade mais interessante.
-- Criar um sistema de registro de ações para acompanhar o histórico dos eventos do jogo.
-- **Use sua imaginação para elaborar diálogos, métodos que sirvam para interagir e use o código base já disponível como exemplo para expandi-lo. Não precisa manter os métodos que já existem, você pode alterá-los à vontade**.
-
-## **Arquivos do Projeto**
-
-O projeto contém os seguintes arquivos:
-
-- `personagem.py` - Define a classe base `Personagem`.
-- `vilao.py` - Define a classe `Vilao`, que herda de `Personagem`.
-- `heroi.py` - **(Novo arquivo a ser criado)** Define a classe `Heroi`, que também herda de `Personagem`.
-- `main.py` - Arquivo principal para rodar o jogo e testar as interações.
-- `utils.py` - **(Novo arquivo sugerido)** Pode conter funções auxiliares, como formatação de texto e controle do jogo.
-
-## **Como Executar o Código**
-
-1. Clone este repositório:
-   ```sh
-   git clone https://github.com/profcvanut/improve-this-game.git
-   ```
-2. Acesse a pasta do projeto:
-   ```sh
-   cd improve-this-game
-   ```
-3. Execute o jogo:
-   ```sh
-   python main.py
-   ```
-
-## **Contribuição**
-
-Caso tenha sugestões ou melhorias, fique à vontade para abrir uma **issue** ou fazer um **pull request**.
+A arquitetura antiga (conhecida como *Spaghetti Code*) centralizava todas as decisões de batalha e menus dentro do arquivo principal. Com a refatoração, o projeto passou a utilizar conceitos sólidos de design de software:
+* **Encapsulamento:** Cada entidade (Ben, Vilgax e os Alienígenas) gerencia seu próprio estado de vida, sistema de danos e lógica interna de menu.
+* **Polimorfismo:** O loop de jogo no `main.py` foi drasticamente reduzido. O arquivo principal agora atua apenas como o juiz da arena, invocando o método `.executar_turno()` de forma dinâmica, sem precisar saber qual herói ou alienígena está ativo naquele exato momento.
+* **Herança:** Os alienígenas e o herói base herdam propriedades e comportamentos comuns, evitando a repetição de código (Princípio D.R.Y. - *Don't Repeat Yourself*).
 
 ---
 
-🚀 **Divirta-se programando e aprimorando este jogo!**
+## 👽 2. Personagens Jogáveis
+
+Aqui estão os guerreiros disponíveis para a batalha pelos quais você pode alternar livremente usando o DNA do relógio:
+
+* **👦🏻 Ben Tennyson:** A forma humana inicial. Embora não possua superpoderes físicos, tem acesso total ao Omnitrix e conta com um protocolo de emergência secreto caso sua vida chegue ao limite crítico.
+* **💪🔴 Quatro-Braços:** O titã de força bruta da raça Tetramand. Especialista em combate corpo a corpo, focado em causar danos massivos e esmagar as defesas do oponente.
+* **🔥 Chama:** Um ser feito de puro fogo vivo (Pyronita). Seus ataques utilizam manipulação térmica, esferas ardentes e ondas de calor devastadoras.
+* **💎 Diamante:** Composto por cristais ultra-resistentes (Petrosapien). Equilibra perfeitamente ataque e defesa, sendo capaz de erguer barreiras de cristal que bloqueiam totalmente o próximo ataque inimigo.
+
+### 🦑👹 O Nêmesis: Vilgax
+O conquistador de mundos está obstinado a arrancar o Omnitrix do seu pulso. Ele possui uma quantidade massiva de pontos de vida e ataques implacáveis que testarão a sua estratégia a cada turno.
+
+---
+
+## 📁 3. Organização dos Arquivos
+
+O projeto está estruturado de forma modular para facilitar a manutenção e a adição de novos conteúdos:
+
+```text
+├── main.py          # O coração do jogo. Controla o loop principal, turnos e condições de vitória/derrota.
+├── personagem.py    # Classe base mãe contendo os atributos e métodos compartilhados por todas as entidades.
+├── heroi.py         # Contém a classe principal do Ben Tennyson e todas as subclasses dos Alienígenas.
+├── vilao.py         # Contém a inteligência e os comportamentos de ataque do Vilgax.
+└── utils.py         # Ferramentas auxiliares, como o tratador de entradas numéricas e a renderização gráfica da barra de vida.
+
+## 🚀 4. Como Executar o Jogo
+
+Para iniciar sua jornada e rodar o jogo na sua máquina local, você só precisará do **Python 3** instalado. Siga o passo a passo:
+
+* **Download dos Arquivos:** Baixe o código fonte ou faça um `git clone` deste repositório para uma pasta no seu computador.
+* **Abertura do Terminal:** Navegue até a pasta do projeto e abra o seu terminal exatamente nesse local.
+* **Comando de Execução:** Com o terminal aberto na pasta raiz do jogo, digite o seguinte comando e aperte Enter:
+
+```bash
+python main.py
+
+
 
