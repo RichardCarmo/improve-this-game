@@ -39,18 +39,3 @@ O projeto está estruturado de forma modular para facilitar a manutenção e a a
 ├── vilao.py         # Contém a inteligência e os comportamentos de ataque do Vilgax.
 └── utils.py         # Ferramentas auxiliares, como o tratador de entradas numéricas e a renderização gráfica da barra de vida.
 
----
-
-## 🚀 4. Como Executar o Jogo
-
-Para iniciar sua jornada e rodar o jogo na sua máquina local, você só precisará do **Python 3** instalado. Siga o passo a passo:
-
-* **Download dos Arquivos:** Baixe o código fonte ou faça um `git clone` deste repositório para uma pasta no seu computador.
-* **Abertura do Terminal:** Navegue até a pasta do projeto e abra o seu terminal exatamente nesse local.
-* **Comando de Execução:** Com o terminal aberto na pasta raiz do jogo, digite o seguinte comando e aperte Enter:
-
-```bash
-python main.py
-
-
-
