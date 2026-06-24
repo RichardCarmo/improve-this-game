@@ -39,3 +39,22 @@ O projeto está estruturado de forma modular para facilitar a manutenção e a a
 ├── vilao.py         # Contém a inteligência e os comportamentos de ataque do Vilgax.
 ├── tema.json        # Arquivo de configuração de estilo visual para os botões do Pygame GUI.
 └── .gitignore       # Configuração para evitar o envio de arquivos temporários de compilação (__pycache__) para o repositório.
+
+---
+
+## 📸 4. Telas do Jogo
+
+Confira abaixo o visual da interface gráfica do jogo, com as barras de vida dinâmicas e o painel de habilidades interativo:
+
+### 🟢 O Início da Batalha
+![Ben vs Vilgax](print_ben.png)
+
+### 🧬 Transformações e Habilidades (Omnitrix)
+![Quatro-Braços](print_2.png)
+
+![Chama](print_chama.png)
+
+![Diamante](print_diamante.png)
+
+### 🏆 Tela de Vitória
+![Vitória](print_vitória.png) 
