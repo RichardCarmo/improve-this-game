@@ -1,0 +1,15 @@
+{
+    "button": {
+        "colours": {
+            "normal_bg": "#39ff14",
+            "hovered_bg": "#5cff3b",
+            "active_bg": "#22990c",
+            "normal_text": "#000000",
+            "normal_border": "#ffffff"
+        },
+        "misc": {
+            "border_width": "3",
+            "rounding": "5"
+        }
+    }
+}

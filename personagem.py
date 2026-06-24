@@ -4,6 +4,7 @@ class Personagem:
         self.nome = nome
         self.idade = idade
         self.vida = vida
+        self.vida_maxima = vida
 
     def downgrade_vida(self, dano=10):
         self.vida -= dano 
