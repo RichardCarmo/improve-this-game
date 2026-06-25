@@ -102,7 +102,7 @@ while rodando:
                         botao_hab2.show()
                         botao_hab3.show()
                     elif alien_atual == "quatro_bracos":
-                        botao_hab1.set_text("Soco Quatruplo")
+                        botao_hab1.set_text("Soco Quádruplo")
                         botao_hab2.set_text("Palmada Sônica")
                         botao_hab3.set_text("Arremesso de Objeto")
                         botao_hab1.show()

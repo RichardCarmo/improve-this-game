@@ -49,14 +49,14 @@ O projeto está estruturado de forma modular para facilitar a manutenção e a a
 Confira abaixo o visual da interface gráfica do jogo, com as barras de vida dinâmicas e o painel de habilidades interativo:
 
 ### 🟢 O Início da Batalha
-![Ben vs Vilgax](print_ben.png)
+![Ben vs Vilgax](imagens/print_ben.png)
 
 ### 🧬 Transformações e Habilidades (Omnitrix)
-![Quatro-Braços](print_2.png)
+![Quatro-Braços](imagens/print_2.png)
 
-![Chama](print_chama.png)
+![Chama](imagens/print_chama.png)
 
-![Diamante](print_diamante.png)
+![Diamante](imagens/print_diamante.png)
 
 ### 🏆 Tela de Vitória
-![Vitória](print_vitória.png)
+![Vitória](imagens/print_vitoria.png)
