@@ -59,4 +59,4 @@ Confira abaixo o visual da interface gráfica do jogo, com as barras de vida din
 ![Diamante](imagens/print_diamante.png)
 
 ### 🏆 Tela de Vitória
-![Vitória](imagens/print_vitoria.png)
+![Vitória](imagens/print_vitória.png)

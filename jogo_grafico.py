@@ -47,23 +47,23 @@ botao_chama = pygame_gui.elements.UIButton(relative_rect=pygame.Rect((150, 480),
 botao_quatro_bracos = pygame_gui.elements.UIButton(relative_rect=pygame.Rect((430, 480), (220, 40)), text='QUATRO BRAÇOS', manager=gerenciador_ui, visible=False)
 botao_diamante = pygame_gui.elements.UIButton(relative_rect=pygame.Rect((150, 530), (220, 40)), text='DIAMANTE', manager=gerenciador_ui, visible=False)
 botao_voltar = pygame_gui.elements.UIButton(relative_rect=pygame.Rect((430, 530), (220, 40)), text='VOLTAR', manager=gerenciador_ui, visible=False)
-img_menu = pygame.image.load("Capa_ben10.jpg")
+img_menu = pygame.image.load("imagens/Capa_ben10.jpg")
 img_menu = pygame.transform.scale(img_menu, (800, 600))
-img_casa = pygame.image.load("Casa_ben10.webp")
+img_casa = pygame.image.load("imagens/Casa_ben10.webp")
 img_casa = pygame.transform.scale(img_casa, (800, 600))
-img_fundo_ui = pygame.image.load("fundo.jpg").convert()
+img_fundo_ui = pygame.image.load("imagens/fundo.jpg").convert()
 img_fundo_ui = pygame.transform.scale(img_fundo_ui, (800, 150))
-img_ben = pygame.image.load("ben.png")
+img_ben = pygame.image.load("imagens/ben.png")
 img_ben = pygame.transform.scale(img_ben, (120, 150))
-img_vilgax = pygame.image.load("vilgax_isolated_flipped.png")
+img_vilgax = pygame.image.load("imagens/vilgax_isolated_flipped.png")
 img_vilgax = pygame.transform.scale(img_vilgax, (180, 220))
 tempo_animacao = 0
 tela_atual = "menu"
 imagens_aliens = {
-    "ben": pygame.image.load("ben.png"),
-    "chama": pygame.image.load("heatblast.png"),
-    "quatro_bracos": pygame.image.load("four_arms.png"),
-    "diamante": pygame.image.load("diamondhead.png")
+    "ben": pygame.image.load("imagens/ben.png"),
+    "chama": pygame.image.load("imagens/heatblast.png"),
+    "quatro_bracos": pygame.image.load("imagens/four_arms.png"),
+    "diamante": pygame.image.load("imagens/diamondhead.png")
 }
 rodando = True 
 while rodando:
