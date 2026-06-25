@@ -78,7 +78,7 @@ while rodando:
         gerenciador_ui.process_events(evento)
 
         if evento.type == pygame_gui.UI_BUTTON_PRESSED:
-            print(f"RADAR: O jogo viu um clique no botão -> {evento.ui_element.text}") # ADICIONE ESTA LINHA
+            print(f"RADAR: O jogo viu um clique no botão -> {evento.ui_element.text}") 
             if evento.ui_element == botao_jogar:
                 tela_atual = "jogo"
                 botao_jogar.hide()        
